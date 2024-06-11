@@ -1,0 +1,576 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("fonts/orbitron-black-webfont.woff");
+}
+
+@font-face {
+  font-family: "Monocraft";
+  src: url("fonts/Monocraft.ttf");
+}
+
+h1,
+body,
+nav,
+p {
+  font-size: 12px;
+  font-family: "Monocraft", "monospace";
+}
+
+h1,
+nav {
+  line-height: 0%;
+}
+
+h1 {
+  color: rgb(212, 31, 225);
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: rgb(76, 52, 231);
+  width: max-content;
+  padding: 2px 20px;
+}
+
+a:visited {
+  color: rgb(235, 63, 149);
+}
+
+a:active {
+  color: rgb(88, 66, 230);
+}
+
+p {
+  justify-content: center;
+}
+
+img {
+  margin-top: 20px;
+  height: 60%;
+  width: 60%;
+}
+
+.conclusionText {
+  display: flex;
+  flex-direction: row;
+  /* Ensure it's a block-level element */
+  text-align: center;
+  /* Center the text horizontally */
+  margin: 0 auto;
+  /* Center the block element horizontally */
+  margin-top: 50px;
+  width: auto;
+}
+
+#factOutput {
+  display: block;
+  width: 250px;
+  font-family: "Orbitron";
+}
+
+#recommendedMovies {
+  display: flex;
+  color: yellow;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+
+.conclusionContainer {
+  width: auto;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* landscape and portrait on smartphones make text size same */
+  scroll-behavior: smooth;
+}
+
+svg.menu {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  top: 1em;
+  right: 1em;
+}
+
+.navLinksForHome {
+  display: none;
+}
+
+.navLinks {
+  display: none;
+}
+
+.conclusionNav {
+  display: none;
+}
+
+.navLinksForParallels {
+  display: none;
+}
+
+.navLinksForHome.toggle {
+  display: block;
+}
+
+.conclusionNav.toggle {
+  display: block;
+}
+
+.navLinks.toggle {
+  display: block;
+}
+
+.navLinksForParallels.toggle {
+  display: block;
+}
+
+@media (min-width: 30em) {
+  .navLinksForHome {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    margin-left: 1em;
+  }
+
+  svg.menu {
+    display: none;
+  }
+
+  /*conclusionNav {
+        display: block;
+    }*/
+
+  .navLinksForHome {
+    display: block;
+  }
+
+  .navLinks {
+    display: block;
+  }
+
+  .conclusionNav {
+    display: block;
+  }
+
+  .navLinksForParallels {
+    display: block;
+  }
+}
+
+@media (min-width: 45em) {
+  .dustInWindSimilarityImg {
+    grid-area: dustInWindSimilarityImg;
+    margin-left: 150px;
+  }
+
+  .moneyHoneySimilarityText {
+    grid-area: moneyHoneySimilarityText;
+    /*width: auto;*/
+  }
+
+  .moneyHoneySimilarityImg {
+    grid-area: moneyHoneySimilarityImg;
+    margin-left: 150px;
+  }
+
+  .dustWindSimilarityText {
+    grid-area: dustWindSimilarityText;
+  }
+
+  .differencesWebPg {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: 120px 200px;
+    grid-template-areas:
+      "navLinks navLinks"
+      "differencesInFilmImg differencesInFilms";
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .differencesInFilms {
+    grid-area: differencesInFilms;
+    grid-column: -2/-1;
+    grid-row: 2/3;
+  }
+
+  .differencesInFilmImg {
+    grid-area: differencesInFilmImg;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 100px;
+  }
+
+  .containerForHomePg {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 120px 200px 200px 200px;
+    grid-template-areas:
+      "navLinksForHome navLinksForHome"
+      "dustInWindImg melodramaText"
+      "moneyHoneyCoverImg buttonContainer";
+    justify-content: center;
+  }
+
+  .navLinksForHome {
+    grid-area: navLinksForHome;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .dustInWindImg {
+    grid-area: dustInWindImg;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 300px;
+    bottom: 70%;
+  }
+
+  .melodramaText {
+    grid-area: melodramaText;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    /*width: 400px;*/
+  }
+
+  .moneyHoneyCoverImg {
+    grid-area: moneyHoneyCoverImg;
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+    margin-left: 300px;
+  }
+
+  .similaritiesWebPg {
+    display: grid;
+    grid-template-columns: 350px 400px;
+    grid-template-rows: 120px 350px 400px;
+    grid-template-areas:
+      "navLinksForParallels navLinksForParallels"
+      "dustInWindSimilarityImg dustWindSimilarityText"
+      "moneyHoneySimilarityImg moneyHoneySimilarityImg";
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .navLinksForParallels {
+    grid-area: navLinksForParallels;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .dustInWindSimilarityImg {
+    grid-area: dustInWindSimilarityImg;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /*margin-left: 150px;*/
+  }
+
+  .moneyHoneySimilarityText {
+    grid-area: moneyHoneySimilarityText;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 400px;
+  }
+
+  .moneyHoneySimilarityImg {
+    grid-area: moneyHoneySimilarityImg;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    /*margin-left: 150px;*/
+  }
+
+  .dustWindSimilarityText {
+    grid-area: dustWindSimilarityText;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  p {
+    box-sizing: border-box;
+    width: 50%;
+    display: block;
+  }
+
+  nav {
+    line-height: 1.5%;
+    margin: 1em 0;
+    width: 500px;
+  }
+
+  button {
+    display: flex;
+  }
+
+  #changeTextButton {
+    /*position: absolute;*/
+    grid-area: changeTextButton;
+    display: block;
+  }
+
+  img {
+    width: 65%;
+    height: 65%;
+  }
+
+  .buttonContainer {
+    grid-area: buttonContainer;
+    margin-top: 20%;
+  }
+
+  #factOutput {
+    display: block;
+  }
+
+  svg.menu {
+    display: none;
+  }
+
+  .conclusionNav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  .navLinksForHome {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  .navLinksForParallels {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  .navLinks {
+    display: flex;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 55em) {
+  svg.menu {
+    display: none;
+  }
+
+  .navLinks {
+    grid-area: navLinks;
+    grid-column: 1/3;
+  }
+
+  .differencesWebPg {
+    display: grid;
+    grid-template-columns: 550px 500px;
+    grid-template-rows: 120px 200px;
+    grid-template-areas:
+      "navLinks navLinks"
+      "differencesInFilmImg differencesInFilms";
+    justify-content: center;
+  }
+
+  .differencesInFilms {
+    grid-area: differencesInFilms;
+    grid-column: -2/-1;
+    grid-row: 2/3;
+  }
+
+  .differencesInFilmImg {
+    grid-area: differencesInFilmImg;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 250px;
+  }
+
+  .containerForHomePg {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 120px 200px 200px;
+    grid-template-areas:
+      "navLinksForHome navLinksForHome"
+      "dustInWindImg melodramaText"
+      "moneyHoneyCoverImg melodramaText .";
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .navLinksForHome {
+    grid-area: navLinksForHome;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .dustInWindImg {
+    grid-area: dustInWindImg;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 220px;
+  }
+
+  .melodramaText {
+    grid-area: melodramaText;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    /*width: 400px;*/
+  }
+
+  .moneyHoneyCoverImg {
+    grid-area: moneyHoneyCoverImg;
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+    margin-left: 220px;
+    margin-bottom: 40%;
+  }
+
+  .similaritiesWebPg {
+    display: grid;
+    grid-template-columns: 450px 600px;
+    grid-template-rows: 120px 350px 400px;
+    grid-template-areas:
+      "navLinksForParallels navLinksForParallels"
+      "dustInWindSimilarityImg moneyHoneySimilarityImg"
+      "dustWindSimilarityText moneyHoneySimilarityImg";
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .navLinksForParallels {
+    grid-area: navLinksForParallels;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .dustInWindSimilarityImg {
+    grid-area: dustInWindSimilarityImg;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /*margin-left: 150px;*/
+  }
+
+  .moneyHoneySimilarityText {
+    grid-area: moneyHoneySimilarityText;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    /*width: auto;*/
+  }
+
+  .moneyHoneySimilarityImg {
+    grid-area: moneyHoneySimilarityImg;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    /*margin-right: 150px;*/
+  }
+
+  .dustWindSimilarityText {
+    grid-area: dustWindSimilarityText;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  h1,
+  body,
+  nav {
+    line-height: normal;
+  }
+
+  img.dustInWindImg {
+    margin-right: 300px;
+  }
+
+  img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .navLinksForHome {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  .navLinksForParallels {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  /*button {
+        height: 40px;
+        display: block;
+    }*/
+}
+
+/* does light or dark mode depending on your device settings */
+@media only screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #444444;
+    color: white;
+    /* text color */
+  }
+
+  a:link,
+  a:visited {
+    background-color: black;
+  }
+
+  h1 {
+    color: rgb(235, 63, 149);
+  }
+
+  #initials {
+    fill: white;
+  }
+}

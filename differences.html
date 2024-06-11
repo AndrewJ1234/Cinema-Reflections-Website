@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="en">
+
+
+<!--Your site should include at least three web pages with a multi-column layout on each page. 
+Include properly-formatted images and appropriately-marked up text and continue to define sections 
+of content with HTML semantic elements. 
+Add a self-hosted web font to your pages (not Google or Adobe Fonts) with the CSS @font-face rule.
+
+Use the CSS Grid Layout Module for the overall layout of each page. 
+Also use the CSS Flexible Box Layout Module (Flexbox) at least once on each page to 
+arrange items along one axis. 
+You can feel free to use the same general layout for every page of the site but you don’t need to.-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Film Disparities</title>
+    <h1>Film Disparities</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <div class="navLinks">
+                <nav>
+                    <ul><a href="index.html">
+                            Home
+                        </a></ul>
+                    <ul><a href="similarities.html">
+                            Film Parallels
+                        </a></ul>
+                    <ul> <a href="differences.html">
+                            Film Disparities
+                        </a></ul>
+                    <ul> <a href="conclusion.html">
+                            Conclusion
+                        </a></ul>
+                </nav>
+            </div>
+            <svg class="menu" viewBox="0 0 30 30" role="button">
+                <title>Navigation Menu</title>
+                <line x1="8" x2="22" y1="12" y2="12" stroke="yellow" stroke-linecap="square" />
+                <line x1="8" x2="22" y1="18" y2="18" stroke="yellow" stroke-linecap="square" />
+                <line x1="8" x2="22" y1="24" y2="24" stroke="yellow" stroke-linecap="square" />
+
+            </svg>
+        </header>
+        <div class="differencesWebPg">
+            <div class="differencesInFilmImg">
+                <img src="images/differences.png"
+                    srcset="images/differences-1100.png 300w, images/differences.png 200w, images/differences-800.png 100w"
+                    sizes="(max-width: 300px) 100%, (max-width: 250px) 80%" alt='Differences in the Two Films"'>
+            </div>
+
+            <div class="differencesInFilms">
+                <article>
+                    <p>Hsiao-hsien centers on the men's jobs: working in the mine, and going
+                        to
+                        the military, only
+                        briefly,
+                        showcasing
+                        the women’s jobs. More importantly, the director underscores that both the man and the woman
+                        work.
+                        Whereas
+                        in
+                        <span style="color:blueviolet">"Money and
+                            Honey"</span>, the documentary primarily focuses on the woman’s job as a caretaker.
+                        Because
+                        the
+                        woman
+                        laborers
+                        are the main 'breadwinners', they become caretakers of others instead of their children to
+                        provide
+                        for
+                        their
+                        children’s education back in their home country (Zhang 203-204).
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </main>
+    <script src="actions.js"></script>
+    <script src="navigation.js"></script>
+</body>
+
+</html>

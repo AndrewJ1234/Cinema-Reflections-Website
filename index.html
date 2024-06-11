@@ -1,0 +1,117 @@
+<!Doctype html>
+<html lang="en">
+
+<!--Your site should include at least three web pages with a multi-column layout on each page. 
+Include properly-formatted images and appropriately-marked up text and continue to define sections 
+of content with HTML semantic elements. 
+Add a self-hosted web font to your pages (not Google or Adobe Fonts) with the CSS @font-face rule.
+
+Use the CSS Grid Layout Module for the overall layout of each page. 
+Also use the CSS Flexible Box Layout Module (Flexbox) at least once on each page to 
+arrange items along one axis. 
+You can feel free to use the same general layout for every page of the site but you don’t need to.-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Love, Struggle, and Sacrifice</h1>
+
+</head>
+
+
+<body>
+    <main>
+        <header>
+            <div class="navLinksForHome">
+                <nav>
+                    <ul><a href="index.html">
+                            Home
+                        </a></ul>
+                    <ul><a href="similarities.html">
+                            Film Parallels
+                        </a></ul>
+                    <ul> <a href="differences.html">
+                            Film Disparities
+                        </a></ul>
+                    <ul> <a href="conclusion.html">
+                            Conclusion
+                        </a></ul>
+                </nav>
+            </div>
+
+            <svg class="menu" viewBox="0 0 30 30" role="button">
+                <title>Navigation Menu</title>
+                <line x1="8" x2="22" y1="12" y2="12" stroke="yellow" stroke-linecap="square" />
+                <line x1="8" x2="22" y1="18" y2="18" stroke="yellow" stroke-linecap="square" />
+                <line x1="8" x2="22" y1="24" y2="24" stroke="yellow" stroke-linecap="square" />
+
+            </svg>
+        </header>
+
+
+        <div class="containerForHomePg">
+            <div class="buttonContainer">
+                <button id="changeTextButton">Change Font</button>
+                <button id="randomFactsBtn">Movie Facts</button>
+                <div id="factOutput"></div>
+            </div>
+
+
+
+            <div class="movieCovers">
+                <div class="dustInWindImg">
+                    <img src="images/dustInWind.png"
+                        srcset="images/dustInWind-960.png 300w, images/dustInWind-720.png 200w, images/dustInWind-480.png 100w"
+                        sizes="(max-width: 300px) 100%, (max-width: 250px) 80%" alt='Cover Of "Dust in the Wind"'>
+                </div>
+                <div class="moneyHoneyCoverImg">
+                    <img src="images/money-and-honey-locandina.png"
+                        srcset="images/money-and-honey-locandina-960.png 300w, images/money-and-honey-locandina-720.png 200w, images/money-and-honey-locandina-480.png 100w"
+                        sizes="(max-width: 300px) 100%, (max-width: 250px) 80%" alt='Cover Of " Money and Honey"'>
+                </div>
+            </div>
+            <div class="melodramaText">
+                <article>
+                    <p>There’s a term,
+                        <span style="background-color: rgb(162, 15, 162); color: white">'Melodrama'</span>, which
+                        expands beyond the
+                        meaning
+                        of
+                        'sentimentality' but rather
+                        centers
+                        around
+                        the concept of showing love (Teo 2006). Furthermore, <span
+                            style="background-color: rgb(162, 15, 162); color: white">melodrama</span>
+                        can be expressed through the
+                        hero
+                        and
+                        the
+                        heroine who are not outcasts of society but merely suffer from the impact of not adapting to
+                        their
+                        new
+                        environments. Thus, they observe their new environments instead. These ideas are used to
+                        illustrate
+                        the
+                        family and nation in <span style="color:blueviolet">"Dust in the Wind"</span> and <span
+                            style="color:blueviolet">"Money and
+                            Honey"</span>. In
+                        both of these films, the
+                        directors
+                        utilize
+                        the
+                        element of love to illustrate the concept of family and nation.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+    </main>
+    <script src="actions.js"></script>
+    <script src="navigation.js"></script>
+    <!-- put js file at the end so it doesnt affect the other code -->
+</body>
+
+
+</html>
